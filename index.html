@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>CREATION BY M&R – Business Support & Marketing Agency</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body { margin:0; font-family: 'Montserrat', sans-serif; color:#111; background:#fafafa; }
+    header { position:fixed; top:0; left:0; width:100%; background:rgba(0,0,0,0.7); padding:20px 40px; z-index:1000; }
+    header nav a { color:#fff; text-decoration:none; margin:0 20px; font-weight:600; }
+    header nav a:hover { color:#ff00aa; }
+
+    section { padding:100px 10%; }
+
+    /* Постмодерн стиль */
+    h2 { font-size:42px; margin-bottom:20px; font-weight:800; color:#ff00aa; }
+    h3 { color:#111; font-size:26px; margin-bottom:10px; }
+    p { line-height:1.7; }
+
+    /* Hero Section */
+    .hero {
+        height:100vh;
+        background-image:url('https://images.unsplash.com/photo-1596865249308-2472dc5807d7?q=80&w=1206&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size:cover;
+        background-position:center;
+        position:relative;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:flex-start;
+        color:#fff;
+    }
+    .hero::after {
+        content:'';
+        position:absolute;
+        top:0; left:0;
+        width:100%; height:100%;
+        background:rgba(0,0,0,0.55);
+    }
+    .hero-content {
+        position:relative;
+        max-width:60%;
+    }
+    .hero h1 { font-size:70px; margin:0 0 20px; font-weight:900; }
+    .hero p { font-size:20px; max-width:600px; }
+
+    /* About */
+    .about { display:flex; align-items:center; gap:50px; }
+    .about img { width:45%; border-radius:15px; }
+
+    /* Services */
+    .services { display:grid; grid-template-columns:repeat(3,1fr); gap:40px; }
+    .service-box {
+        background:#fff;
+        padding:30px;
+        border-radius:15px;
+        border:3px solid #ff00aa;
+    }
+
+    /* Advantages */
+    .advantages { display:grid; grid-template-columns:repeat(3,1fr); gap:40px; }
+    .adv-box {
+        background:#fff;
+        padding:25px;
+        border-left:8px solid #ff00aa;
+    }
+
+    /* Process */
+    .process { display:grid; grid-template-columns:repeat(3,1fr); gap:40px; }
+    .step {
+        padding:30px;
+        background:#fff;
+        border-radius:12px;
+        border:2px dashed #ff00aa;
+    }
+
+    /* Contacts */
+    .contacts {
+        height:100vh;
+        background:#111;
+        color:#fff;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+
+    /* Contact Form */
+    .form-block { background:#fff; padding:40px; border-radius:15px; max-width:500px; margin:auto; }
+    .form-block input, .form-block textarea {
+        width:100%; padding:12px; margin-bottom:15px;
+        border:2px solid #ff00aa; border-radius:8px; font-size:16px;
+    }
+    .form-block button {
+        background:#ff00aa; color:#fff; border:none; padding:15px 30px;
+        font-size:18px; font-weight: bold; border-radius:10px; cursor:pointer;
+    }
+    footer {
+        background:#000; color:#fff; text-align:center; padding:40px;
+        font-size:14px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="#hero">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#contacts">Contacts</a>
+    </nav>
+</header>
+
+<!-- 1. Главный экран -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <h1>CREATION BY M&R</h1>
+        <p>Agence qui repense le soutien aux entreprises et l’expression de marque à travers une approche postmoderne, créative et profondément stratégique. Nous guidons les marques dans un monde où l’esthétique, l’audace et la cohérence deviennent des leviers de croissance incontournables.</p>
+    </div>
+</section>
+
+<!-- 2. Про нас -->
+<section id="about">
+    <h2>Qui Nous Sommes</h2>
+    <div class="about">
+        <div>
+            <p>CREATION BY M&R est une agence qui mêle vision conceptuelle et exécution précise. Nous aidons les entreprises à structurer leurs idées, à clarifier leurs objectifs et à renforcer leur présence sur le marché. Notre équipe, composée de spécialistes du marketing, du branding et du business support, s’engage à créer des solutions sur mesure adaptées aux réalités de chaque client.  
+            Nous croyons qu’une identité forte ne naît pas du hasard mais d’un dialogue entre créativité et stratégie. C’est ce dialogue que nous orchestrons au quotidien.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 3. Сервисы -->
+<section id="services">
+    <h2>Nos Pôles de Maîtrise</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>Business Support Services</h3>
+            <p>Nous accompagnons les entreprises dans l’organisation, la structuration des tâches, la création de documents professionnels et la gestion de processus internes. Notre objectif : fluidifier votre quotidien pour libérer votre potentiel.</p>
+        </div>
+        <div class="service-box">
+            <h3>Marketing & Stratégie</h3>
+            <p>Nous développons des stratégies marketing basées sur des données réelles et des objectifs précis. Chaque campagne est pensée pour maximiser l’impact tout en reflétant votre identité unique.</p>
+        </div>
+        <div class="service-box">
+            <h3>Brand Consulting & Publicité</h3>
+            <p>Nous créons des univers visuels, des messages puissants et des campagnes publicitaires qui donnent vie à votre marque. Notre approche combine analyse, design et storytelling moderne.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Преимущества -->
+<section id="advantages">
+    <h2>Pourquoi Choisir CREATION BY M&R</h2>
+    <div class="advantages">
+        <div class="adv-box">
+            <h3>Approche postmoderne assumée</h3>
+            <p>Nous ne suivons pas les tendances — nous les redéfinissons. Notre esthétique combine rupture visuelle et élégance stratégique.</p>
+        </div>
+        <div class="adv-box">
+            <h3>Solutions réellement personnalisées</h3>
+            <p>Aucun projet n’est standardisé. Chaque client bénéficie d’une analyse profonde et d’une solution construite à partir de zéro.</p>
+        </div>
+        <div class="adv-box">
+            <h3>Accompagnement complet</h3>
+            <p>Du conseil stratégique à l’exécution opérationnelle, nous restons présents à chaque étape pour garantir cohérence et performance.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Процесс -->
+<section id="process">
+    <h2>Notre Manière de Travailler</h2>
+    <div class="process">
+        <div class="step">
+            <h3>01. Analyse & Vision</h3>
+            <p>Nous étudions vos besoins, votre marché et votre identité pour définir une direction claire et durable.</p>
+        </div>
+        <div class="step">
+            <h3>02. Création & Construction</h3>
+            <p>Nous développons les solutions : branding, stratégies marketing, supports, process internes et optimisations.</p>
+        </div>
+        <div class="step">
+            <h3>03. Mise en œuvre & Suivi</h3>
+            <p>Nous appliquons, ajustons et analysons pour garantir un résultat fort, cohérent et aligné sur vos objectifs.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Контакты -->
+<section class="contacts" id="contacts">
+    <h2 style="color:#ff00aa;">Entrer en Contact</h2>
+    <p style="max-width:600px; font-size:20px;">
+        Écrivez-nous à tout moment : <br><strong>info@creationbymr.agency</strong><br><br>
+        Nous serons ravis de vous accompagner dans votre développement.  
+        Chaque message est une nouvelle opportunité de construire quelque chose d’exceptionnel.
+    </p>
+    <p style="margin-top:20px; opacity:0.8;">Adresse : Neworkstation, 6 Imp Des Pins, 33470 Gujan-Mestras</p>
+</section>
+
+<!-- 7. Форма -->
+<section id="form">
+    <h2>Parlez-nous de Votre Projet</h2>
+    <div class="form-block">
+        <p>Remplissez le formulaire ci-dessous et notre équipe vous contactera rapidement.</p>
+        <form>
+            <input type="text" placeholder="Votre nom">
+            <input type="email" placeholder="Votre e-mail">
+            <textarea rows="4" placeholder="Votre message"></textarea>
+            <button>Envoyer</button>
+        </form>
+    </div>
+</section>
+
+<!-- 8. Футер -->
+<footer>
+    © 2025 CREATION BY M&R — Tous droits réservés.
+</footer>
+
+</body>
+</html>
